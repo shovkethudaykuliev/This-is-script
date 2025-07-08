@@ -8,78 +8,129 @@
 <body>
     <h1>Welcome</h1>
     <script>
-        let score=0;
-        let total=10;
-       let question=prompt("Can you answer questions about the multiplication table?")
+        let score = 0;
+        let total = 10;
+        let question = prompt("Can you answer questions about the multiplication table?")
         while (question != "Yes, I do") {
-            question=prompt("Can you answer questions about the multiplication table?\n\n"+"Yes, I do")
+            question = prompt("Can you answer questions about the multiplication table?\n\n"+ "Please write the:Yes, I do")
            
         }
       
        
-        let answer=prompt("Answer the question--> 8 X 9 = ? \n\n"+
+        let answer = prompt( 
+            "Answer the question--> 8 X 9 = ? \n\n"+
             "1. 72  \n"+
             "2. 56 \n"+
-            "3. 49");
+            "3. 49"
+        );
         
-            if (answer=="1") {score+=1;  }   
+             if (answer == "1") {
+                score += 1;  
+            }   
 
-         answer=prompt("Answer the question--> 4 X 9 = ? \n\n"+
+         answer = prompt(
+            "Answer the question--> 4 X 9 = ? \n\n"+
             "1. 42  \n"+
             "2. 36 \n"+
-            "3. 39");
+            "3. 39"
+        );
         
-            if (answer=="2") {score+=1;  }   
+            if (answer == "2") {
+                score +=1 ;
+            }   
 
-             answer=prompt("Answer the question--> 5 X 8 = ? \n\n"+
+         answer = prompt(
+            "Answer the question--> 5 X 8 = ? \n\n"+
             "1. 27  \n"+
             "2. 56 \n"+
-            "3. 97");
+            "3. 97"
+            );
         
-            if (answer=="2") {score+=1;  }
+            if (answer == "2") {
+                score += 1;
+            }
             
-            answer=prompt("Answer the question--> 2 X 7 = ? \n\n"+
+        answer = prompt(
+            "Answer the question--> 2 X 7 = ? \n\n"+
             "1. 13  \n"+
             "2. 15 \n"+
-            "3. 14");
+            "3. 14"
+        );
         
-            if (answer=="3") {score+=1;  }  
+            if (answer == "3") {
+                score += 1;
+            }  
         
-            answer=prompt("Answer the question--> 5 X 6 = ? \n\n"+
+        answer = prompt(
+            "Answer the question--> 5 X 6 = ? \n\n"+
             "1. 35  \n"+
             "2. 25 \n"+
-            "3. 30");
+            "3. 30"
+        );
         
-            if (answer=="3") {
-                score+=1;
+            if (answer == "3") {
+                score += 1;
             }  
 
-            answer=prompt("Answer the question--> 9 X 9 = ? \n\n"+
+        answer = prompt(
+            "Answer the question--> 9 X 9 = ? \n\n"+
             "1. 81  \n"+
             "2. 80 \n"+
-            "3. 82");
+            "3. 82"
+        );
         
-            if (answer=="1") {
-                score+=1;
+            if (answer == "1") {
+                score += 1;
             }  
         
-            answer=prompt("Answer the question--> 3 X 4  = ? \n\n"+
+        answer = prompt(
+            "Answer the question--> 3 X 4  = ? \n\n"+
             "1. 13  \n"+
             "2. 12 \n"+
             "3. 14");
         
-            if (answer=="2") {score+=1;  }  
+            if (answer == "2") {
+                score += 1; 
+            }  
 
-            answer=prompt("Answer the question--> 4 X 4 = ? \n\n"+
+        answer = prompt(
+            "Answer the question--> 4 X 4 = ? \n\n"+
             "1. 13  \n"+
             "2. 15 \n"+
-            "3. 16");
+            "3. 16"
+        );
         
-            if (answer=="3") {score+=1;  }  
+            if (answer == "3") {
+                score += 1;
+            }  
       
-            
+            answer = prompt(
+            "Answer the question--> 7 X 7 = ? \n\n"+
+            "1. 35  \n"+
+            "2. 49 \n"+
+            "3. 42"
+            );
+        
+            if (answer == "2") {
+                score += 1;
+            } 
+
+        answer = prompt(
+            "Answer the question--> 8 X 5 = ? \n\n"+
+            "1. 50  \n"+
+            "2. 45 \n"+
+            "3. 40"
+        );
+        
+            if (answer == "3") {
+                score += 1;
+            }  
+
+            alert("Total questions: " + total)
+            alert("Correct questions: " + score)
+            alert("Incorrect: " + ( total-score))
     </script>
-    <link rel="stylesheet" href="index.js">
+    
 </body>
 
 </html>
